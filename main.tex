@@ -38,28 +38,45 @@
 
 \tableofcontents
 
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
 
 \section{¿Qué es la memoria del computador?} \label{contenido}
 
 La palabra "Memoria" la usamos para designar las partes del computador que sirve como soporte para el manejo todos los datos y programas que se utilizan mientras está operando. La memoria es fundamental para que funcione correctamente el computador, entre otras cosas permite que pueda arrancar.
-Es la zona de trabajo donde se guardan temporalmente las órdenes que debe ejecutar y los datos que utilizan dichas órdenes en el computaodr.\cite{dirac}
+Es la zona de trabajo donde se guardan temporalmente las órdenes que debe ejecutar y los datos que utilizan dichas órdenes en el computaodr.\cite{1website}
 
 \section{Mencione los tipos de memoria que conoce y haga una descripción de cada tipo}
 
-Podemos clasificar a la memoria en dos tipos basicos; La memoria R.A.M(Random Access Memory) y la memoria R.O.M(Read Only Memory)
+Podemos clasificar a la memoria en dos tipos basicos; La memoria R.A.M(Random Access Memory) y la memoria R.O.M(Read Only Memory).
 
 \subsection{R.A.M:} \label{contenido} Lo que en Español significa memoria de acceso aleatorio. Es el área donde el microprocesador realiza las diferentes operaciones. Esta memoria almacena los programas que ejecuta el usuario y los datos con los que trabaja los programas.
 Es un tipo de memoria volatil, todo lo contrario al disco duro, porque almacena temporalmente los datos y cuando el computador se apaga todo lo almacenado se pierde. 
 Cuando se abre un archivo o programa estos de cargan en la R.A.M para poder ser utilizado por el microprocesador. Incluso el sistema operativo cuando se carga lo hace en la R.A.M.
 
+\vspace{1cm}
+
 \textbf{La memoria R.A.M. se clasifica en tres tipos:}
 \begin{itemize}
-    \item Memoria caché
-    \item Tarjeta de memoria R.A.M.
-    \item Memoria R.A.M de videos
+    \item Memoria caché: Es un tipo de memoria volatil, pero rapida. Su papel es almacenar instrucciones y datos a los que el procesador debe acceder continuamente. 
+    Esta diseñado para almacenar temporalmen aquellos datos a los que el sistema necesita tener un acceso instantaneo para el procesador, pues se trata de información relevante que debe estar a la mano.
+    La memoria caché es 5 o 6 veces mas rapida que la R.A.M. por lo tanto más costosa, pero con menos capacidad que la R.A.M.\cite{2website}
+     \item Ttearjeta de memoria R.A.M.
+    \item Memoria R.A.M de videos.
 \end{itemize}
+
+\subsection{R.O.M:} \label{contenido} (Read Only Memory) que en Español significa Memoria de solo lectura y como su nombre lo indica es una memoria que solo puede leerse sin modificar su contenido. Es un tipo de memoria no volatil. Se utiliza para ayudar a realizar las diferentes operaciones de arranque del sistema.
+Es mucho mas lenta y con menos capacidad que la R.A.M.
+
+\section{Describa la manera como se gestiona la memoria en un computador}
+
+Gestionar la memoria consiste en llevar un registo de las partes de la memoria que se estan utilizando y que las no, para asignarle espacio en la memoria a los procesos que se estan ejecutando y liberarlo cuando terminen.
+La gestion de la memoria es impotante para optimizar el espacio y poder intercambiar con los programas que van hacer ejecutados del disco duro a la memoria. Tembien facilita espacio para caada proceso y controla que no se trabaje en zonas de la memoria que no han sido asignadas.
+
+\vspace{0.5cm}
+
+Cuando encendemos el computador, el circuito de control llamado Bios inicia una revision en el sistema para comprobar la existencia y buen funcionamiento de la R.A.M. y otras secciones de la maquina. Luego, buesca en la unidad de almacenamiento permanente o Disco duro el sistema operativo para que sea cargado en la R.A.M. Entonces, el computador queda funcionando bajo las instrucciones de este sistema.
+Los programas se comunican con el microprocesador y permiten realizar procesos segun la necesidad del usuario. El trabajo de movimiento, comparacion y depuracion de datos es efectua en la memoria R.A.M. \cite{3website}
+
+\section{¿Qué hace que una memoria sea más rápida que otra?¿Por qué esto es importante?} \label{contenido}
 
 \begin{lstlisting}
 #include <stdio.h>
