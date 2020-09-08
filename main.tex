@@ -37,7 +37,7 @@
 \end{titlepage}
 
 \tableofcontents
-
+\newpage
 
 \section{¿Qué es la memoria del computador?} \label{contenido}
 
@@ -68,52 +68,28 @@ Es mucho mas lenta y con menos capacidad que la R.A.M.
 
 \section{Describa la manera como se gestiona la memoria en un computador}
 
-Gestionar la memoria consiste en llevar un registo de las partes de la memoria que se estan utilizando y que las no, para asignarle espacio en la memoria a los procesos que se estan ejecutando y liberarlo cuando terminen.
-La gestion de la memoria es impotante para optimizar el espacio y poder intercambiar con los programas que van hacer ejecutados del disco duro a la memoria. Tembien facilita espacio para caada proceso y controla que no se trabaje en zonas de la memoria que no han sido asignadas.
+Gestionar la memoria consiste en llevar un registro de las partes de la memoria que se estan utilizando y las que no, para asignarle espacio en la memoria a los procesos que se estan ejecutando y liberarlo cuando terminen.
+La gestión de la memoria es impotante para optimizar el espacio y poder intercambiar con los programas que van hacer ejecutados del disco duro a la memoria. Tembién facilita espacio para caada proceso y controla que no se trabaje en zonas de la memoria que no han sido asignadas.
 
 \vspace{0.5cm}
 
-Cuando encendemos el computador, el circuito de control llamado Bios inicia una revision en el sistema para comprobar la existencia y buen funcionamiento de la R.A.M. y otras secciones de la maquina. Luego, buesca en la unidad de almacenamiento permanente o Disco duro el sistema operativo para que sea cargado en la R.A.M. Entonces, el computador queda funcionando bajo las instrucciones de este sistema.
-Los programas se comunican con el microprocesador y permiten realizar procesos segun la necesidad del usuario. El trabajo de movimiento, comparacion y depuracion de datos es efectua en la memoria R.A.M. \cite{3website}
+Cuando encendemos el computador, el circuito de control llamado Bios inicia una revision en el sistema para comprobar la existencia y buen funcionamiento de la R.A.M. y otras secciones de la maquina. Luego, busca en la unidad de almacenamiento permanente o Disco duro el sistema operativo para que sea cargado en la R.A.M. Entonces, el computador queda funcionando bajo las instrucciones de este sistema.
+Los programas se comunican con el microprocesador y permiten realizar procesos según la necesidad del usuario. El trabajo de movimiento, comparación y depuración de datos es efectua en la memoria R.A.M. \cite{3website}
 
-\section{¿Qué hace que una memoria sea más rápida que otra?¿Por qué esto es importante?} \label{contenido}
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?} \label{contenido}
 
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
+El desempeño de memoria consiste en la relación entre velocidad y latencia(Ambas estan extremadamente relacionadas). Cuanto más rápido es la velocidad de la memoria, más rápido funciona el computador.
+La capacidad juega un papel muy importante, ya que a mayor capacidad, mejor rendimiento
+La velocidad de la memoria se mide por el intervalo de tiempo que transcurre desde que la maquina recibe a una orden hasta que la ejecuta,este intervalo se conoce como latencia.
 
-int main()
-{
-    int i;
+La frecuencia es otro de los elementos más importantes de la memoria RAM, ya que cuanto mayor sea la velocidad de la memoria, más rápido podrá trabajar los datos.
 
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
+\newpage
 
-    return 0;
-}
-\end{lstlisting}
 
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-En la sección de teoremas (\ref{contenido})
-
-\section{Conclusión} \label{conclulsion}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
+\citep{Programación}
 \end{document}
